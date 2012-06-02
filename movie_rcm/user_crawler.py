@@ -84,7 +84,7 @@ def get_data(user):
         TIME_1st = time.time()
     elif API_TIMES == 38:
         time_past = time.time() - TIME_1st
-        print "%s开始，经过%s秒结束" % (trans_time(TIME_1st), time_past)
+        print "%s 开始，经过 %s 秒结束" % (trans_time(TIME_1st), time_past)
         if time_past < 60:
             time.sleep(int(60 - time_past) + 1)
         API_TIMES = -1
@@ -106,4 +106,4 @@ def trans_time(t):
 
 if __name__ == '__main__':
     #init_db()      #use this for the 1st time
-    crawl_10000()
+    #crawl_10000()
