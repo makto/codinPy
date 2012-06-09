@@ -66,7 +66,7 @@ def crawl_10000():
                 if len(contacts) < 50:
                     break   #已经到最后一页，跳出
 
-        #将抓去过的用户记录进db_done
+        #将抓取过的用户记录进db_done
         rd.sadd(db_done, user)
 
         if rd.scard(db_result) > 10000:
@@ -106,4 +106,5 @@ def trans_time(t):
 
 if __name__ == '__main__':
     #init_db()      #use this for the 1st time
-    #crawl_10000()
+    #crawl_10000()  #use this to crawl 10000 user
+    pass
