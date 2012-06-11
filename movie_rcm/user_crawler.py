@@ -1,5 +1,9 @@
 ﻿#-*- coding: UTF-8 -*-
 
+"""
+这部分代码用来抓取得到基础用户池
+"""
+
 import urllib2, urllib
 import json
 import time

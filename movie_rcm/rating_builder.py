@@ -1,5 +1,9 @@
 #-*- coding: UTF-8 -*-
 
+"""
+这部分代码用来做中间数据转换
+"""
+
 import redis
 
 rd = redis.Redis(host='127.0.0.1', port=6379, db=0)
@@ -19,8 +23,8 @@ db_user_rated = 'USERS::RATED::NUM'     #db_users中每个用户评过分的电�
 db_movie_user = 'MOVIE::%s::USER'       #单部电影的所有用户评分，hash结构，new
 #db_movies = 'MOVIES::ALL'               #被统计到的电影全集，set结构，new
 
-db_valid_movies = 'MOVIES::REAL::VALID'     #观看人数超过50的电影集合, set
-db_movie_watched = 'MOVIES::WATCHED::NUM'   #db_movie_info中所有电影的观看过的用户数, new
+db_valid_movies = 'MOVIES::REAL::VALID'     #评分人数超过50的电影集合, set
+db_movie_watched = 'MOVIES::WATCHED::NUM'   #db_movie_info中所有电影的评分过的用户数, new
 
 def gene_all_movie_ratings():
     """生成所有电影的用户评分信息
@@ -61,6 +65,14 @@ def gene_crawl_info():
     movie_basic_size = rd.hlen(db_movie_info)
     movie_valid_size = rd.scard(db_valid_movies)
     #basic电影评过分的用户数量的分布
+    print u"""统计信息如下：
+    用户池大小: %s
+    基础用户数: %s
+    有效用户数: %s
+    基础电影数: %s
+    有效电影数: %s
+    """.encode('gbk') % (user_pool_size, user_basic_size, user_valid_size,
+        movie_basic_size, movie_valid_size)
 
 
 if __name__ == '__main__':
@@ -70,3 +82,4 @@ if __name__ == '__main__':
     #print "all valid user rated num generated!"
     #gene_movie_watched_num()
     #print "all valid movie watched num generated!"
+    gene_crawl_info()

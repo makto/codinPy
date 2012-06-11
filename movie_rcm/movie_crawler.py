@@ -1,5 +1,9 @@
 ﻿#-*- coding: UTF-8 -*-
 
+"""
+这部分代码用来抓取用户评分数据
+"""
+
 import time
 import json
 import urllib2, urllib
