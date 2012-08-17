@@ -1,5 +1,7 @@
-#! /usr/bin/env python
-# Add all the natural numbers below one thousand that are multiples of 3 or 5.
+#!/usr/bin/env python
+"""
+Add all the natural numbers below one thousand that are multiples of 3 or 5.
+"""
 
 def way_1():
     result = 0
