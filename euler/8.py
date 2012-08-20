@@ -22,7 +22,7 @@ for i in range(996):
     digits = [j for j in string]
     sorted_digits = sorted(digits, reverse=True)
     num = int(''.join(sorted_digits))
-    if num > largest:
+    if num > largest:   # it's a leaky method, but works here
         largest = num
 
 print largest
