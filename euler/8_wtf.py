@@ -44,15 +44,14 @@ def search_loop():
             return result
     return []
 
-if __name__ == '__main__':
-    import time
-    import operator
-    t_a = time.time()
-    result = max(search_loop())
-    max_product = reduce(operator.mul, [result+i for i in xrange(5)])
-    t_b = time.time()
-    t_diff = t_b - t_a
-    print result, max_product, t_diff
+import time
+import operator
+t_a = time.time()
+result = max(search_loop())
+max_product = reduce(operator.mul, [result+i for i in xrange(5)])
+t_b = time.time()
+t_diff = t_b - t_a
+print result, max_product, t_diff
 
 #########
 # if the five consecutive digits are asked to be adjacent

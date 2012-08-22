@@ -21,16 +21,15 @@ def way_2():
             break
     return sum([i for i in fibo if i%2==0])
 
-if __name__ == '__main__':
-    import time
-    time_a = time.time()
-    print way_1()
-    time_b = time.time()
-    print time_b - time_a
+import time
+time_a = time.time()
+print way_1()
+time_b = time.time()
+print time_b - time_a
 
-    time_c = time.time()
-    print way_2()
-    time_d = time.time()
-    print time_d - time_c
+time_c = time.time()
+print way_2()
+time_d = time.time()
+print time_d - time_c
 
 # it's suprising that way_2 is faster than way_1

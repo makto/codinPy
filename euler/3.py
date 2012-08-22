@@ -29,6 +29,5 @@ def find(n):
         small += 2            # because 600851475143 is odd
     return max(result)             # the factor will never be even
 
-if __name__ == '__main__':
-    n = 600851475143
-    print find(n)
+n = 600851475143
+print find(n)

@@ -26,7 +26,6 @@ def find():
             break
     return origin
 
-if __name__ == '__main__':
-    print find()
+print find()
 
 # the result is 232792560, which is quite surprizing.

@@ -33,7 +33,6 @@ def filter(palins):
             return p, factors
     return 'NotFound'
 
-if __name__ == '__main__':
-    print filter(gene_palins())
+print filter(gene_palins())
 
 # the result is 906609 = 913 * 993

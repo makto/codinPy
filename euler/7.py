@@ -19,16 +19,15 @@ def is_prime(n):
 
     return True
 
-if __name__ == '__main__':
-    i = 2
-    counter = 1         # yep, already count 2 in
-    while True:
-        i += 1
-        if i % 2 == 0:  #this is why 2 is counted before hand
-            continue
-        if is_prime(i):
-            counter += 1
-            if counter == 10001:
-                print i
-                break
-    print 'Done'
+i = 2
+counter = 1         # yep, already count 2 in
+while True:
+    i += 1
+    if i % 2 == 0:  #this is why 2 is counted before hand
+        continue
+    if is_prime(i):
+        counter += 1
+        if counter == 10001:
+            print i
+            break
+print 'Done'

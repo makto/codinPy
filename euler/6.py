@@ -10,5 +10,4 @@ def sum_of_square(n):
 def square_of_sum(n):
     return pow(sum(range(1,n+1)), 2)
 
-if __name__ == '__main__':
-    print square_of_sum(100) - sum_of_square(100)
+print square_of_sum(100) - sum_of_square(100)

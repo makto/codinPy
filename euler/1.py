@@ -14,15 +14,16 @@ def way_2():
     result = sum([i for i in xrange(1000) if i%3 == 0 or i%5 == 0])
     return result
 
-if __name__ == '__main__':
-    import time
-    time_a = time.time()
-    print way_1()
-    time_b = time.time()
-    print time_b - time_a
-    time_c = time.time()
-    print way_2()
-    time_d = time.time()
-    print time_d - time_c
+import time
+
+time_a = time.time()
+print way_1()
+time_b = time.time()
+print time_b - time_a
+
+time_c = time.time()
+print way_2()
+time_d = time.time()
+print time_d - time_c
 
 # It seems that way_2 is faster than way_1
