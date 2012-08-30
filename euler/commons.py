@@ -22,3 +22,15 @@ def is_prime(n):
             return False
 
     return True
+
+def divisors(num):
+    "for positive numbers"
+    divs = set()
+    limit = int(sqrt(num) + 1)
+    for i in xrange(1, limit):
+        if num % i == 0:
+            divs.update({i, num/i})
+    return divs
+  
+if __name__ == '__main__':
+    print "this is a module"
