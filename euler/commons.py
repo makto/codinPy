@@ -10,7 +10,8 @@ def is_prime(n):
     if type(n) is not int:
         raise TypeError
     if n < 2:
-        raise ValueError
+        return False
+        #raise ValueError
     if n % 2 == 0:
         if n == 2:
             return True
