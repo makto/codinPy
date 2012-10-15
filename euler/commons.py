@@ -7,8 +7,7 @@ Never give a python file numeric name!
 from math import sqrt
 
 def is_prime(n):
-    if type(n) is not int:
-        raise TypeError
+    n = int(n)
     if n < 2:
         return False
         #raise ValueError
