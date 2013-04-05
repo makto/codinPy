@@ -1,6 +1,15 @@
-Python-Playground
-=================
+# Python-Playground
 
-This is a place where I play around with Python.
+I play around with Python here.
 
-I'll make little Python things here, which I hope would be interesting.
+## euler
+
+My solutions to [projecteuler](http://projecteuler.net/)
+
+## movie_rcm
+
+A demo of Collaborative Filtering Recommendation based on data of Douban Movie
+
+## spam_filter
+
+A demo of Anti-Spam server
