@@ -5,6 +5,14 @@ Never give a python file numeric name!
 """
 
 from math import sqrt
+import time
+
+def timer(func):
+    def wrapper(*args, **kwargs):
+        start = time.time()
+        func(*args, **kwargs)
+        print "Time consumed: %ss" % (time.time()-start)
+    return wrapper
 
 def is_prime(n):
     n = int(n)
@@ -32,5 +40,12 @@ def divisors(num):
             divs.update({i, num/i})
     return divs
   
+def is_right_triangle(a, b, c):
+    sides = sorted([a,b,c])
+    if sides[2]**2 == sides[1]**2 + sides[0]**2:
+        return True
+    else:
+        return False
+
 if __name__ == '__main__':
     print "this is a module"
