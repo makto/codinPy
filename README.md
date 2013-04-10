@@ -1,4 +1,4 @@
-# Python-Playground
+# codinPy = Code in Python
 
 I play around with Python here.
 
