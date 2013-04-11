@@ -2,6 +2,8 @@
 
 I play around with Python here.
 
+And I wrote small tools, some of which you may find useful.
+
 ## euler
 
 My solutions to [projecteuler](http://projecteuler.net/)
