@@ -16,6 +16,10 @@ A demo of Collaborative Filtering Recommendation based on data of Douban Movie
 
 A demo of Anti-Spam server
 
+## zoj
+
+My solutions to [zju oj](http://acm.zju.edu.cn/onlinejudge/)
+
 ## treegraph
 
 Generate and draw proper structure according to your description
